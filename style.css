@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between; /* Space between content and animation */
+  align-items: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for all content */
+#main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Left side for other content */
+#content {
+  flex: 1; /* Take up remaining space */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Right side for Three.js animation */
+#animation-container {
+  width: 40%; /* Adjust the width as needed */
+  height: 50%;
+  background-color: #222; /* Optional: Background color for the animation area */
+  position: relative;
+}
+
+/* Adjust the Three.js canvas to fit the container */
+#animation-container canvas {
+  width: 100%;
+  height: 100%;
+  display: block; /* Remove any inline spacing */
+}
